@@ -6,16 +6,5 @@
  */
 
 module.exports = {
-	index: function (req, res) {
-		Comment.find().then(function (data) {
-			res.json(data);	
-		});
-	},
-	
-	create: function (req, res) {
-		Comment.find().limit(1).then(function (data) {
-			res.json(data);
-		});
-	}
 };
 
